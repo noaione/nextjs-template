@@ -23,7 +23,7 @@ Default NextJS config with:
 - Using a True Gray version for Gray color
 - No extra plugins setup, you do it yourself.
 
-**NextJS and Babel are configured"":<br />
+**NextJS and Babel are configured**:<br />
 - Using `babel-plugin-typescript-to-proptypes` plugin to automatically convert Interface to PropTypes
 - Using 'esbuild-loader` to make build faster (also replaced Terser with esbuild-loader).
 - Webpack 5

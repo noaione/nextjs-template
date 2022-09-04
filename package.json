@@ -19,9 +19,13 @@
   },
   "dependencies": {
     "@kachkaev/react-inline-js": "0.4.0",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^12.2.5",
+    "next-plugin-preact": "^3.0.7",
+    "preact": "^10.10.6",
+    "preact-render-to-string": "^5.2.2",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+    "react-ssr-prepass": "npm:preact-ssr-prepass"
   },
   "devDependencies": {
     "@types/node": "18.7.14",

@@ -7,6 +7,7 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier",
+        "next",
     ],
     env: {
         node: true,
@@ -100,6 +101,6 @@ module.exports = {
                 "@typescript-eslint/no-var-requires": "off",
                 "@typescript-eslint/": "off",
             },
-        }
+        },
     ],
 };

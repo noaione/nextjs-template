@@ -13,35 +13,35 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "type-check": "tsc --pretty --noEmit",
-    "lint": "eslint --ext ts --ext tsx --ext js pages/ lib/ components/",
-    "lintfix": "eslint --ext ts --ext tsx --ext js pages/ lib/ components/ --fix",
-    "testall": "npm-run-all lint type-check"
+    "lint": "next lint",
+    "lintfix": "next lint --fix",
+    "testall": "npm run type-check && npm run lint"
   },
   "dependencies": {
-    "@kachkaev/react-inline-js": "0.2.0",
-    "next": "11.1.3-canary.83",
-    "preact": "10.5.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@kachkaev/react-inline-js": "0.4.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "16.11.1",
-    "@types/react": "17.0.30",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
-    "autoprefixer": "10.3.7",
-    "cssnano": "5.0.8",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.2",
-    "eslint-plugin-react": "7.26.1",
-    "postcss": "8.3.9",
+    "@types/node": "18.7.14",
+    "@types/react": "18.0.18",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "autoprefixer": "10.4.8",
+    "cssnano": "5.1.13",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-react": "7.31.5",
+    "postcss": "8.4.16",
     "postcss-extend": "1.0.5",
     "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-import": "14.0.1",
-    "postcss-preset-env": "6.7.0",
+    "postcss-import": "15.0.0",
+    "postcss-preset-env": "7.8.0",
     "prettier": "2.4.1",
-    "tailwindcss": "2.2.17",
-    "typescript": "4.4.4"
+    "tailwindcss": "3.1.8",
+    "typescript": "4.8.2"
   }
 }

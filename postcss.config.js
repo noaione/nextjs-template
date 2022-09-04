@@ -22,7 +22,7 @@ const usePlugins = [
 ];
 
 if (isProd) {
-    usePlugins.push("cssnano");
+    usePlugins.push(["cssnano", { preset: "default" }]);
 }
 
 module.exports = {

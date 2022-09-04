@@ -1,23 +1,21 @@
 const colors = require("tailwindcss/colors");
 
-module.exports = {
-    mode: "jit",
-    purge: [
+/**
+ * @type {import("tailwindcss").Config}
+ */
+const Config = {
+    content: [
         "./components/**/*.{js,ts,jsx,tsx}",
         "./lib/**/*.{js,ts,jsx,tsx}",
         "./pages/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: "class", // or 'media' or 'class'
+    darkMode: "class",
     theme: {
         extend: {
             colors: {
-                gray: colors.trueGray,
+                gray: colors.neutral,
             },
         },
     },
-    variants: {
-        extend: {},
-    },
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    plugins: [],
 };
+module.exports = Config;

@@ -1,11 +1,10 @@
-const withPreact = require("next-plugin-preact");
+const { NODE_ENV } = process.env;
 
 /**
  * @type {import("next").NextConfig}
  */
-const nextConfig = {
+const withProduction = {
     productionBrowserSourceMaps: true,
-    swcMinify: true,
     headers: async () => {
         return [
             {
@@ -20,4 +19,26 @@ const nextConfig = {
         ];
     },
 };
-module.exports = withPreact(nextConfig);
+
+/**
+ * @type {import("next").NextConfig}
+ */
+const baseConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "cdn.discordapp.com",
+                port: "",
+                pathname: "/**",
+            },
+        ],
+    },
+};
+if (NODE_ENV === "development") {
+    module.exports = baseConfig;
+} else {
+    module.exports = { ...baseConfig, ...withProduction };
+}

@@ -20,5 +20,6 @@
         "typescriptreact",
         "javascript"
     ],
-    "npm.packageManager": "pnpm"
+    "npm.packageManager": "pnpm",
+    "editor.rulers": [110, 120]
 }

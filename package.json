@@ -35,7 +35,7 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-react": "7.32.2",
-    "postcss": "8.4.24",
+    "postcss": "8.4.31",
     "postcss-extend": "1.0.5",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-import": "15.1.0",
